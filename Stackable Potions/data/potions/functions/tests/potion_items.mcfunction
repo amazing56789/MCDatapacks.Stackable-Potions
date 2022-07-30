@@ -2,8 +2,8 @@
 #	@@loop-type: recursive, 5t
 #	@@retype: runner
 
-execute at @e[ type = minecraft:item, nbt = { Item : { id : "minecraft:potion" } } ] run function potions:stack/drink
-execute at @e[ type = minecraft:item, nbt = { Item : { id : "minecraft:splash_potion" } } ] run function potions:stack/linger
-execute at @e[ type = minecraft:item, nbt = { Item : { id : "minecraft:lingering_potion" } } ] run function potions:stack/splash
+execute as @e[ type = minecraft:item, nbt = { Item : { id : "minecraft:potion" } } ] at @s run function potions:stack/drink
+execute as @e[ type = minecraft:item, nbt = { Item : { id : "minecraft:splash_potion" } } ] at @s run function potions:stack/linger
+execute as @e[ type = minecraft:item, nbt = { Item : { id : "minecraft:lingering_potion" } } ] at @s run function potions:stack/splash
 
 schedule function potions:tests/potion_items 5t
