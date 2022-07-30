@@ -1,0 +1,20 @@
+{
+	"pack" : {
+		"pack_format" : 9,
+		"description" : [
+			{
+				"text" : "Makes potions stack!\n"
+			},
+			{
+				"text" : "--By ",
+				"color" : "gray",
+				"italic" : true
+			},
+			{
+				"text" : "amazing56789",
+				"color" : "dark_red",
+				"italic" : true
+			}
+		]
+	}
+}
