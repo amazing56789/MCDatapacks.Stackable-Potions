@@ -1,7 +1,7 @@
 #@type: runner
 #@in: potions:tests/potion_items
 
-scoreboard players set @s potions.count 0
+scoreboard players set @s potions.count 1
 
 data modify storage potions:equals org.effects set from entity @s Item.tag.CustomPotionEffects
 data modify storage potions:equals org.potion set from entity @s Item.tag.Potion
