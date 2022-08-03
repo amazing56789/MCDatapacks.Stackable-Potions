@@ -1,11 +1,8 @@
-scoreboard players set %same potions.all 0 #0 = same, 1 = not same
+scoreboard players set @s potions.count 0 #boolean if the potion is the same: 0 = same, 1 = different
 data modify storage potions:equals tmp set from storage potions:equals org
 
 
-execute store success score %same potions.all run data modify storage potions:equals tmp.id set from entity @s Item.id
+execute store success score @s potions.count run data modify storage potions:equals tmp.effects set from entity @s Item.tag.CustomPotionEffects
+execute if score @s potions.count matches 0 store success score @s potions.count run data modify storage potions:equals tmp.potion set from entity @s Item.tag.Potion
 
-execute store result score %orglen potions.all run data get storage potions:equals org.effects
-execute store result score %newlen potions.all run data get storage potions:equals tmp.effects
-execute store result score %same potions.all unless score %orglen = %newlen
-
-execute store
+scoreboard players operation @e[ type = minecraft:item, limit = 1, sort = nearest ] potions.count += @s potions.count
