@@ -8,11 +8,11 @@ It's actually pretty simple. For every potion item entity, it counts all the nea
 
 ## Note:
 This won't work for different ordered lists. Basically, it will stack these two:
-* { id : "minecraft:potion", tag : { CustomPotionEffects: [\{ Id : 1, Amplifier : 5b, Duration 1421 }, { Id : 16, Amplifier : 23b, Duration : 12312 \}] } }
-* { id : "minecraft:potion", tag : { CustomPotionEffects: [\{ Id : 1, Amplifier : 5b, Duration 1421 }, { Id : 16, Amplifier : 23b, Duration : 12312 \}] } }
+    * { id : "minecraft:potion", tag : { CustomPotionEffects: [\{ Id : 1, Amplifier : 5b, Duration 1421 }, { Id : 16, Amplifier : 23b, Duration : 12312 \}] } }
+    * { id : "minecraft:potion", tag : { CustomPotionEffects: [\{ Id : 1, Amplifier : 5b, Duration 1421 }, { Id : 16, Amplifier : 23b, Duration : 12312 \}] } }
 but it won't stack these two:
-{ id : "minecraft:potion", tag : { CustomPotionEffects: [\{ Id : 1, Amplifier : 5b, Duration 1421 }, { Id : 16, Amplifier : 23b, Duration : 12312 \}] } }
-{ id : "minecraft:potion", tag : { CustomPotionEffects: [\{ Id : 16, Amplifier : 23b, Duration : 12312 }, { Id : 1, Amplifier : 5b, Duration 1421 \}] } }
+    * { id : "minecraft:potion", tag : { CustomPotionEffects: [\{ Id : 1, Amplifier : 5b, Duration 1421 }, { Id : 16, Amplifier : 23b, Duration : 12312 \}] } }
+    * { id : "minecraft:potion", tag : { CustomPotionEffects: [\{ Id : 16, Amplifier : 23b, Duration : 12312 }, { Id : 1, Amplifier : 5b, Duration 1421 \}] } }
 I could've made it work, but that would've been a *lot* less efficient, so I decided not to. It won't bother you unless you're /give-ing or /item-ing with different NBT data
 
 ## To change version:
