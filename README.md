@@ -1,6 +1,6 @@
 # Stackable-Potions
 A datapack that stacks dropped potions.
-If you remix, adapt, or make any other changes to this datapack, please preserve the creator.txt file.
+If you remix, adapt, or make any other changes to this datapack, please preserve the creator.txt file. If you use this in a video or any other form of media, credit me.
 
 
 ## How it works:
@@ -19,5 +19,5 @@ I could've made it work, but that would've been a *lot* less efficient, so I dec
 This is made for 1.19.X. If you want to change that, go into `Stackable Potions/pack.mcmeta`, and change `"pack_format"` from 10 to whatever your version's MCmeta format is. Find your version's MCmeta number on [the Minecraft wiki](https://minecraft.fandom.com/wiki/Pack.mcmeta).
 
 ## Contact me if:
-You have a better way of doing this, I'll update this repo
-If you want a specific, *simple* change just for you. It's really easy to make something like "it won't stack unless the potion colors are the same", or "decrease the range of item stacking".
+* You have a better way of doing this, I'll update this repo.
+* If you want a specific, *simple* change just for you. It's really easy to make something like "it won't stack unless the potion colors are the same", or "decrease the range of item stacking".
