@@ -1,7 +1,6 @@
 # Stackable-Potions
 A datapack that stacks dropped potions. For u/TranquilBurrito on reddit.
-
-If you remix, adapt, or make any other changes to this datapack, please preserve the creator.txt file.
+If you remix, adapt, or make any other changes to this datapack, please preserve the creator.txt file. If you use this in a video/in media, credit me.
 
 ## How it works:
 It's actually pretty simple. For every potion item entity, it counts all the nearby items that have some of the same nbt and adds that to a scoreboard. After that, it sets the count of the original potion item to the scoreboard value, and kills all the other items with the same NBT.
