@@ -16,7 +16,7 @@ but it won't stack these two:
 I could've made it work, but that would've been a *lot* less efficient, so I decided not to. It won't bother you unless you're /give-ing or /item-ing with different NBT data
 
 ## To change version:
-Go into `Stackable Potions/pack.mcmeta`, and change `"pack_format"` from 10 to whatever your version's MCmeta format is. Find your version's MCmeta number on [the MineCraft wiki](https://minecraft.fandom.com/wiki/Pack.mcmeta).
+Go into `Stackable Potions/pack.mcmeta`, and change `"pack_format"` from 10 to whatever your version's MCmeta format is. Find your version's MCmeta number on [the Minecraft wiki](https://minecraft.fandom.com/wiki/Pack.mcmeta).
 
 ## Contact me if:
 You have a better way of doing this, I'll update this repo
