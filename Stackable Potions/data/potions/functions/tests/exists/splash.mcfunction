@@ -1,0 +1,2 @@
+#checks if an item already ran the stacking function this tick (dead items can execute commands)
+execute unless entity @e[ type = minecraft:item, distance = 0.01..0.6, scores = { potions.count = -2 } ] run function potions:stack/splash
